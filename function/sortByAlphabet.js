@@ -1,6 +1,5 @@
-function sortByAlphabet( arr ) {
-    return arr.sort()
+function sortByAlphabet(arr) {
+  return arr.sort();
 }
 
-
-module.exports = sortByAlphabet
+module.exports = sortByAlphabet;

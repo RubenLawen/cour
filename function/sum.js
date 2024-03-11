@@ -1,6 +1,5 @@
-function sum( firstNumber, secondNumber ) {
-    return firstNumber + secondNumber
+function sum(firstNumber, secondNumber) {
+  return firstNumber + secondNumber;
 }
 
-
-module.exports = sum
+module.exports = sum;

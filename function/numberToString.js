@@ -16,7 +16,7 @@ function numberToString(number) {
       case "4":
         return "quatre";
       case "3":
-        return "trois"
+        return "trois";
       case "2":
         return "deux";
       case "1":
@@ -39,7 +39,7 @@ function numberToString(number) {
       case "40":
         return "quarante";
       case "30":
-        return "trente"
+        return "trente";
       case "20":
         return "vingt";
       case "10":
@@ -52,24 +52,23 @@ function numberToString(number) {
   } else {
     while (number !== 0) {
       if (number > 99) {
-        if(toString(number)[0] == "1"){
-            result += "cent "
-            number -= 100
-        } else{
-            result += `${chiffreToLetter(String(number)[0])} cent `
-            number -= parseInt(`${String(number)[0]}00`)
+        if (toString(number)[0] == "1") {
+          result += "cent ";
+          number -= 100;
+        } else {
+          result += `${chiffreToLetter(String(number)[0])} cent `;
+          number -= parseInt(`${String(number)[0]}00`);
         }
-      } else if(number > 9){
-        result += `${nombreToDizaine(String(number)[0]+"0")} `
-        number -= parseInt(`${String(number)[0]}0`)
-      } else{
-        result += `${chiffreToLetter(String(number)[0])}`
-        number -= parseInt(`${String(number)[0]}`)
+      } else if (number > 9) {
+        result += `${nombreToDizaine(String(number)[0] + "0")} `;
+        number -= parseInt(`${String(number)[0]}0`);
+      } else {
+        result += `${chiffreToLetter(String(number)[0])}`;
+        number -= parseInt(`${String(number)[0]}`);
       }
-        
     }
   }
-  return result
+  return result;
 }
 
 module.exports = numberToString;

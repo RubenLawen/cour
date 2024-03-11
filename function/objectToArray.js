@@ -1,11 +1,11 @@
-function objectToArray( arr, key ) {
-    let allContent = []
+function objectToArray(arr, key) {
+  let allContent = [];
 
-    arr.map((el)=>{
-        allContent.push(eval(`el.${key}`))
-    })
+  arr.map((el) => {
+    allContent.push(eval(`el.${key}`));
+  });
 
-    return allContent
+  return allContent;
 }
 
-module.exports = objectToArray
+module.exports = objectToArray;
