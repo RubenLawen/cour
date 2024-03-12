@@ -25,9 +25,7 @@ function valideEmail(str) {
 function changeLetterRegex(str) {
     let regex = new RegExp(/^[A-Z][A-Za-z0-9_-]{3,19}$/);
     return regex.exec(str)
-  }
-  
-  console.log(changeLetterRegex("Salit c modaz dazf"))
+}
 
 module.exports = {
   removeVoyelles,
