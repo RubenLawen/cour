@@ -1,0 +1,17 @@
+<section id="allProduct">
+    <% data.forEach(product => { %>
+        <article>
+            <h3><%= product.productName %></h3>
+            <img src="/img/<%= product.productImg %>" alt="<%= product.productName %>"/>
+            <p><%= product.productDescription.length > 150 ? product.productDescription.substr(0, 150) + "..." : product.productDescription %></p>
+            <span><%= product.productPrice %>€</span>
+            <form method="post" action="/addtocart/<%= product.productId %>">
+                <button type="submit">Ajouter </button>
+            </form>
+        </article>
+    <% }) %>
+    <% if (typeof respons !== 'undefined' && respons) { %>
+        <script>alert("bien ajouté a votre panier")</script>
+    <% } %>
+    
+</section>

@@ -1,0 +1,32 @@
+{
+    "data": [
+        {
+            "productId": 1,
+            "productName": "T-shirt Fortnite Lama",
+            "productDescription": "Le lama, avec son expression faciale espiègle, est entouré d'éléments emblématiques de Fortnite, tels que les outils de construction, les armes épiques et les arbres de loot. L'arrière-plan est une explosion de couleurs et de mouvements, reflétant l'énergie frénétique du jeu lui-même.",
+            "productImg": "lama.jpg",
+            "productPrice": 15
+        },
+        {
+            "productId": 2,
+            "productName": "T-shirt Son goku enfant",
+            "productDescription": "Avec une profonde tristesse, nous rendons hommage à l'illustre créateur de Son Goku, le regretté Akira Toriyama. À travers son imagination sans bornes et son génie créatif, Toriyama a donné vie à l'un des personnages les plus emblématiques de l'histoire du manga et de l'animation.",
+            "productImg": "goku.png",
+            "productPrice": 25
+        },
+        {
+            "productId": 3,
+            "productName": "T-shirt Brawl Stars Spike",
+            "productDescription": "Plongez dans l'action frénétique de Brawl Stars avec Spike, le cactus charmant au cœur épineux ! Avec son allure unique et son sourire espiègle, Spike apporte une touche de piquant à chaque bataille.",
+            "productImg": "brawlstarSpike.png",
+            "productPrice": 12.55
+        },
+        {
+            "productId": 4,
+            "productName": "T-shirt Brawl Stars Leon",
+            "productDescription": "Entrez dans l'ombre avec Leon, le maître de la furtivité dans Brawl Stars ! Avec son charisme mystérieux et son agilité sans pareille, Leon est un véritable prédateur sur le champ de bataille.",
+            "productImg": "brawlstarLeon.png",
+            "productPrice": 14.99
+        }
+    ]
+}

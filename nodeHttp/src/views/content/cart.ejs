@@ -1,0 +1,25 @@
+<section id="cart">
+
+    <% data.forEach(el => { %>
+        <div class="listing">
+            <div><%= el.productName %></div>
+            <div><%= el.productPrice %>€</div>
+            <div><%= el.quantity %></div>
+            <div>
+                <form method="post" action="/panier/add/<%= el.productId %>">
+                    <button type="submit">+</button>
+                </form>
+                <form method="post" action="/panier/remove/<%= el.productId %>">
+                    <button type="submit">-</button>
+                </form>
+                <form method="post" action="/panier/delete/<%= el.productId %>">
+                    <button type="submit">supp</button>
+                </form>
+            </div>
+        </div>
+    <% }) %>
+    <% if (typeof respons !== 'undefined' && respons) { %>
+        <script>alert("<%= respons %>")</script>
+    <% } %>
+    
+</section>

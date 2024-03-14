@@ -1,0 +1,149 @@
+*{
+    transition: all ease 0.5s;
+    box-sizing: border-box;
+}
+
+/* GLOBAL */
+
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* header */
+
+header{
+    background-color: #8FBB99;
+    padding: 25px;
+}
+
+header nav ul{
+    justify-content: center;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+
+header nav ul li{
+    margin: 0 25Px;
+    font-size: 2rem;
+}
+
+header nav ul li:hover a{
+    text-decoration: underline;
+    text-decoration-color: #595A4A;
+}
+
+header nav ul li a{
+    color: #363635;
+    text-decoration: none;
+}
+
+/* MAIN */
+
+main{
+    background-color: #363635;
+    height: 80vh;
+}
+
+/* FOOTER */ 
+
+footer {
+    background-color: #8FBB99;
+    padding: 25px;
+}
+
+footer small{
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+}
+
+/* SECTION */
+
+#allProduct{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#allProduct article{
+    width: 20%;
+    margin: 10px 25px;
+    background-color: #595A4A;
+    padding: 10px 15Px;
+    border-radius: 10px;
+    color: #8FBB99;
+}
+
+#allProduct article h3{
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+#allProduct article img{
+    width: 150px;
+    object-fit: cover;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+#allProduct article p{
+    text-align: justify;
+    font-size: 1.25rem;
+    line-height: 17.5px;
+}
+
+#allProduct article span{
+    color: white;
+    font-size: 1.5rem;
+}
+
+#cart{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.listing{
+    margin: 25px;
+    display: flex;
+    color: white;
+    font-size: 2rem;
+}
+
+.listing > div:first-of-type{
+    width: 50%;
+}
+
+.listing > div:nth-child(2){
+    width: 17.5%;
+}
+
+.listing > div:nth-child(3){
+    width: 17.5%;
+}
+
+.listing > div:last-of-type{
+    display: flex;
+    width: 15%;
+}
+
+.listing > div button{
+    background-color: #8FBB99;
+    border-radius: 10Px;
+    border: 1Px solid white;
+    margin: 0 10px;
+    padding: 5Px 10px;
+}
